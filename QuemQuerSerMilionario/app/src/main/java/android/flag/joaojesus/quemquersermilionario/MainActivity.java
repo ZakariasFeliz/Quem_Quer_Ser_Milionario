@@ -38,7 +38,8 @@ public class MainActivity extends ActionBarActivity {
         btn_MainActivity.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                // Execute the async task.
+                new GetGameInfo().execute(new WeatherInfo("Lisbon"));
             }
         });
     }
